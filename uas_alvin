@@ -1,0 +1,152 @@
+void setup(){
+size(1000,700);
+background(#0430D8);
+}
+
+void gunung(){
+  fill(#094600);
+  beginShape();
+  vertex(0,200);
+  vertex(250,150);
+  vertex(500,230);
+  vertex(750,130);
+  vertex(1000,240);
+  vertex(1050,250);
+  vertex(0,250);
+  endShape();
+}
+void awan(){
+noStroke();
+fill(255);
+ellipse(200,100,70,45);
+ellipse(250,100,85,65);
+ellipse(290,100,70,35);
+
+ellipse(750,150,80,50);
+ellipse(800,150,95,75);
+ellipse(830,150,80,55);
+ellipse(865,150,75,40);
+}
+void matahari(){
+  noStroke();
+  fill(255,255,0);
+  ellipse(500,100,100,100);
+}
+
+void tebing(){
+  fill(#818181);
+  beginShape();
+  vertex(0,250);
+  vertex(1000,250);
+  vertex(1000,400);
+  vertex(0,400);
+  endShape();
+fill(#C7CBCB);
+  int a=330;
+  int s=70;
+  ellipse(50,a,s,s);
+  ellipse(200,a,s,s);
+  ellipse(350,a,s,s);
+  ellipse(500,a,s,s);
+  ellipse(650,a,s,s);
+  ellipse(800,a,s,s);
+  ellipse(950,a,s,s);
+}
+void air(){
+  noStroke();
+  fill(#34DCF7);
+  beginShape();
+  vertex(450,250);
+  vertex(550,250);
+  vertex(550,500);
+  vertex(450,500);
+  endShape();
+  ellipse(500,500,200,80);
+}
+
+void tanah(){
+  fill(#06B90D);
+  beginShape();
+  vertex(0,400);
+  vertex(1000,400);
+  vertex(1000,700);
+  vertex(0,700);
+  endShape();
+  
+}
+
+void kolam(){
+  fill(#9D330A);
+  beginShape();
+  vertex(300,700);
+  vertex(350,430);
+  vertex(650,430);
+  vertex(700,700);
+  endShape();
+}
+void kolam1(){
+  fill(#33C3DE);
+  beginShape();
+  vertex(320,700);
+  vertex(360,440);
+  vertex(640,440);
+  vertex(690,700);
+  endShape();
+}
+void pohon1(){
+  fill(#369820);
+  triangle(770,410,810,410,790,380);
+  triangle(770,430,810,430,790,400);
+  triangle(770,450,810,450,790,420);
+  fill(#293E25);
+  rect(785,450,10,20);
+  
+  fill(#369820);
+  triangle(820,460,860,460,840,430);
+  triangle(820,480,860,480,840,450);
+  triangle(820,500,860,500,840,470);
+  fill(#293E25);
+  rect(835,500,10,20);
+  
+  fill(#369820);
+  triangle(870,510,910,510,890,480);
+  triangle(870,530,910,530,890,500);
+  triangle(870,550,910,550,890,520);
+  fill(#293E25);
+  rect(885,550,10,20);
+}
+void pohon2(){
+  fill(#369820);
+  triangle(220,410,260,410,240,380);
+  triangle(220,430,260,430,240,400);
+  triangle(220,450,260,450,240,420);
+  fill(#293E25);
+  rect(235,450,10,20);
+  
+  fill(#369820);
+  triangle(170,460,210,460,190,430);
+  triangle(170,480,210,480,190,450);
+  triangle(170,500,210,500,190,470);
+  fill(#293E25);
+  rect(185,500,10,20);
+  
+  fill(#369820);
+  triangle(120,510,160,510,140,480);
+  triangle(120,530,160,530,140,500);
+  triangle(120,550,160,550,140,520);
+  fill(#293E25);
+  rect(135,550,10,20);
+}
+
+void draw(){
+gunung();
+matahari();
+awan();
+tebing();
+tanah();
+kolam();
+kolam1();
+air();
+pohon1();
+pohon2();
+}
